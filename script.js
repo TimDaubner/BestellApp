@@ -1,3 +1,3 @@
 function DOTHIS() {
-    console.log("Hello World");
+    console.log(`${Surename} leerzeichen ${name}`);
 }
