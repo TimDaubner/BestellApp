@@ -10,16 +10,21 @@
     height: 200vh;
     padding-bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
 .content-stiky-order-collection {
     position: sticky;
+    top: 23.5vh;
+    width: 20%;
     background-color: violet;
-    margin: 0 32px;
-    top: 25vh;
-    width: 25%;
+}
+
+.content-stiky-order-position {
+    background-color: rgb(94, 255, 0);
+    margin-left: 159px;
+    width: 50%;
     height: auto;
 }
 
