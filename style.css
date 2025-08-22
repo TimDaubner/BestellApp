@@ -49,11 +49,10 @@
     background-color: #d81010;
     color: #ffde59;
     height: 10%;
-    width: 30%;
+    width: 35%;
     position: absolute;
     transform: rotate(20deg);
-    top: 220px;
-    right: 660px;
+    top: 235px;
 }
 
 /* #endregion header */
