@@ -8,3 +8,14 @@
     src: url('../fonts/fredericka-the-great-v22-latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+/* glass-antiqua-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Glass Antiqua';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/glass-antiqua-v25-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

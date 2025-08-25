@@ -3,7 +3,7 @@
 .my-header {
     background-color: var(--secondary);
     width: 100%;
-    height: 45vh;
+    height: 60vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +15,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-image: url('./img/footprints.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .menu-dino img {
@@ -28,9 +32,10 @@
     justify-content: flex-start;
     align-items: center;
     margin-right: 120px;
-    background-color: var(--primary);
+    background-color: #ff5d5d;
     border-radius: 24px;
     margin-left: 130px;
+    border: none;
 }
 
 .logo-container {
@@ -62,14 +67,16 @@
 }
 
 .logo-image h1 {
+    font-family: 'Fredericka the Great';
     font-size: 78px;
     color: var(--secondary);
     letter-spacing: 4px;
+    font-weight: 100;
 }
 
 .star-rating {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--primary);
     color: var(--secondary);
@@ -82,13 +89,27 @@
     font-size: 16px;
 }
 
+.img-star-rating {
+    width: 16px;
+    aspect-ratio: 1/1;
+}
+
+.img-pizza-slice {
+    position: absolute;
+    width: 265px;
+    aspect-ratio: 1/1;
+    right: 15%;
+    top: 70%;
+    transform: rotate(342deg);
+}
+
 /* #endregion header */
 
 /* #region content */
 .content-order-items {
     background-color: var(--secondary);
     width: 100%;
-    height: 200vh;
+    height: auto;
     padding-bottom: 20px;
     display: flex;
     justify-content: flex-start;
@@ -99,22 +120,54 @@
     position: sticky;
     top: 23.5vh;
     width: 20%;
-    background-color: violet;
     display: flex;
     justify-content: flex-end;
     margin-left: 130px;
 }
 
 .content-stiky-order-position {
-    background-color: rgb(94, 255, 0);
-    width: 50%;
-    min-width: 150px;
+    background-color: var(--primary);
+    color: white;
+    width: 100%;
+    min-width: 350px;
+    min-height: 265px;
     height: auto;
     margin-right: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.content-stiky-order-position h3 {
+    font-family: 'Fredericka the Great';
+    font-size: 32px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 12px;
+}
+
+.ordered-item {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    padding: 8px;
+}
+
+.price-tag {
+    padding-left: 8px;
+}
+
+.trashcan {
+    width: 24px;
+    aspect-ratio: 1/1;
+    mix-blend-mode: hard-light;
+    margin-left: 16px;
 }
 
 .order-items {
-    background-color: aqua;
     width: 60%;
     margin-top: 32px;
     display: flex;
@@ -122,9 +175,57 @@
     flex-direction: column;
 }
 
-.header-order-items {
-    background-color: brown;
+.ordered-number {
+    margin-right: 8px;
+}
+
+.plus-ordered-number {
+    margin-left: 16px;
+}
+
+.content-order-complete {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 16px;
+    padding: 8px;
+}
+
+.content-order-complete p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery-toggle {
+    width: 25px;
+    height: auto;
+    margin: 8px;
+    mix-blend-mode: lighten;
+}
+
+.plus-delivery-cost {
+    width: 16px;
+    height: auto;
+    padding-right: 8px;
+}
+
+.horizontal-line {
     width: 100%;
+    height: 2px;
+    margin: 4px;
+    background-color: white;
+}
+
+.ordered-items-sum {
+    font-size: 32px;
+}
+
+.header-order-items {
+    background-color: var(--secondary);
+    width: 102%;
     height: 65px;
     display: flex;
     justify-content: flex-start;
@@ -132,18 +233,80 @@
 }
 
 .tab-order-items {
-    background-color: beige;
-    width: 100px;
+    background-color: var(--primary);
+    width: 150px;
     height: 100%;
     padding: 20px 20px;
-    margin-left: 8px;
+    margin-left: 48px;
     border-radius: 24px 24px 0px 0px;
-    text-align: center;
+    font-family: 'Fredericka the Great';
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
 .tab-order-items:hover {
     margin-bottom: 20px;
     padding-bottom: 65px;
+    cursor: pointer;
+}
+
+.all-order-items {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+}
+
+.background-img-stone {
+    background-image: url('./img/stone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+    width: 100%;
+}
+
+.background-color-white {
+    border-radius: 24px;
+    padding: 24px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+}
+
+.item-frame {
+    padding: 16px;
+    margin: 24px 0;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    color: rgb(93, 93, 93);
+    background-color: rgba(207, 207, 207, 0);
+    border-radius: 24px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-frame:hover {
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+
+.item-frame img {
+    opacity: 0;
+}
+
+.item-frame:hover img {
+    opacity: 1;
+}
+
+.item-content {
+    font-family: 'Fredericka the Great';
+    font-size: 32px;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* #endregion content */
@@ -164,9 +327,24 @@
     display: none;
 }
 
+.padding-left-8px {
+    padding-left: 8px;
+}
+
 /* #endregion properties */
 
 /* #region responsive */
+
+
+@media(max-width:1200px) {
+    .content-stiky-order-position {
+        min-width: 300px;
+    }
+
+    .content-stiky-order-position h3 {
+        font-size: 27px;
+    }
+}
 
 @media(max-width:860px) {
 
@@ -178,13 +356,13 @@
         justify-content: center;
         align-items: flex-start;
     }
-}
-
-@media(max-width:760px) {
 
     .content-stiky-order-collection {
         display: none;
     }
+}
+
+@media(max-width:760px) {
 
     .content-order-items {
         justify-content: center;

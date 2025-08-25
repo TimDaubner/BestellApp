@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/DinoNugget.png" type="image/x-icon">
     <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="standard.css">
+    <link rel="stylesheet" href="./css/standard.css">
     <link rel="stylesheet" href="style.css">
+    <script src="/scripts/db.js"></script>
     <script src="script.js"></script>
-    <title>Name</title>
+    <title>DINO DELIVERY</title>
 </head>
 
-<body>
-
+<body onload="init()">
 
     <header class="my-header">
         <div class="menu-dino">
@@ -26,7 +27,12 @@
                     <h1>DINO DELIVERY</h1>
                 </div>
                 <div class="star-rating">
-                    <h3>BEWERTUNGEN ( 4.8 VON 5 <img src="" alt="">)</h3>
+                    <div>
+                        <h3>BEWERTUNGEN ( 4.8 VON 5 <img class="img-star-rating" src="./img/commonwealth.svg"
+                                alt="bright star">)
+                        </h3>
+                    </div>
+                    <img class="img-pizza-slice" src="./img/pizza.png" alt="fresh comic pizza slice">
                 </div>
             </div>
         </div>
@@ -37,40 +43,49 @@
         <section class="content-stiky-order-collection">
             <div class="content-stiky-order-position">
 
-                <h3>Nahrungsbeutel</h3>
-                <p><b>1 x</b>item</p>
-                <p><b>1 x</b>item</p>
-                <p><b>1 x</b>item</p>
-                <p><b>1 x</b>item</p>
-                <p><b>1 x</b>item</p>
-                <p><b>1 x</b>item</p>
-                <p><b>1 x</b>item</p>
-                <p><b>1 x</b>item</p>
-                <p><b>1 x</b>item</p>
-                <p><b>1 x</b>item</p>
-                <p><b>1 x</b>item</p>
-                <p><b>1 x</b>item</p>
+                <h3>NAHRUNGSBEUTEL</h3>
+                <div id="order_list">
+
+                </div>
+                <!-- <p class="ordered-item"><b class="ordered-number">1 x</b> Pizza Margherita <b class="price-tag">10.30
+                        €</b> <img class="trashcan" src="./img/trashcan.svg" alt="trashcan"></b> <img
+                        class="plus-ordered-number" src="./img/plus.svg"></p>
+                <p class="ordered-item"><b class="ordered-number">1 x</b> Pizza Margherita <b class="price-tag">10.30
+                        €</b> <img class="trashcan" src="./img/trashcan.svg" alt="trashcan"></b> <img
+                        class="plus-ordered-number" src="./img/plus.svg"></p>
+                <p class="ordered-item"><b class="ordered-number">1 x</b> Pizza Margherita <b class="price-tag">10.30
+                        €</b> <img class="trashcan" src="./img/trashcan.svg" alt="trashcan"></b> <img
+                        class="plus-ordered-number" src="./img/plus.svg"></p> -->
+
                 <div class="content-order-complete">
-                    <p>Zwischensumme</p>
-                    <b>+</b>
-                    <p class="delivery-toggle">Lieferkosten <button><img></button></p>
+                    <p>Zwischensumme <b class="padding-left-8px"> 33.20 €</b></p>
+                    <p><img class="plus-delivery-cost" src="./img/plus.svg"> Lieferkosten <b class="padding-left-8px">5
+                            €</b> <img class="delivery-toggle" src="./img/cross.svg">
+                    </p>
+                    <div class="horizontal-line"></div>
+                    <div class="horizontal-line"></div>
+                    <p class="ordered-items-sum"> Gesamt 38.20 €</p>
                 </div>
             </div>
         </section>
         <div class="order-items">
             <div class="header-order-items">
-                <div class="tab-order-items">Pizza</div>
-                <div class="tab-order-items">Salat</div>
-                <div class="tab-order-items">Dessert</div>
+                <div onclick="toggleFoodType('pizza')" class="tab-order-items">PIZZA</div>
+                <div onclick="toggleFoodType('salad')" class="tab-order-items">SALATE</div>
+                <div onclick="toggleFoodType('dessert')" class="tab-order-items">DESSERT</div>
             </div>
-            <div class="all-order-items">
-                <ul>
-                    <li>Pizza A</li>
-                    <li>Pizza B</li>
-                    <li>Pizza C</li>
-                </ul>
+            <div class="background-img-stone">
+                <div class="background-color-white">
+                    <ul id="all_order_items_pizza" class="all-order-items">
+                    </ul>
+                    <ul id="all_order_items_salad" class="all-order-items d_none">
+                    </ul>
+                    <ul id="all_order_items_dessert" class="all-order-items d_none">
+                    </ul>
+                </div>
             </div>
         </div>
+
     </section>
 
     <footer class="my-footer"></footer>
