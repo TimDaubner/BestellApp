@@ -167,6 +167,10 @@
     margin-left: 16px;
 }
 
+.trashcan:hover {
+    cursor: pointer;
+}
+
 .order-items {
     width: 60%;
     margin-top: 32px;
@@ -252,6 +256,11 @@
     cursor: pointer;
 }
 
+.active {
+    margin-bottom: 20px;
+    padding-bottom: 65px;
+}
+
 .all-order-items {
     width: 100%;
     height: auto;
@@ -329,6 +338,7 @@
 
 .padding-left-8px {
     padding-left: 8px;
+    letter-spacing: 1px;
 }
 
 /* #endregion properties */

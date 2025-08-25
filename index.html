@@ -45,34 +45,24 @@
 
                 <h3>NAHRUNGSBEUTEL</h3>
                 <div id="order_list">
-
                 </div>
-                <!-- <p class="ordered-item"><b class="ordered-number">1 x</b> Pizza Margherita <b class="price-tag">10.30
-                        €</b> <img class="trashcan" src="./img/trashcan.svg" alt="trashcan"></b> <img
-                        class="plus-ordered-number" src="./img/plus.svg"></p>
-                <p class="ordered-item"><b class="ordered-number">1 x</b> Pizza Margherita <b class="price-tag">10.30
-                        €</b> <img class="trashcan" src="./img/trashcan.svg" alt="trashcan"></b> <img
-                        class="plus-ordered-number" src="./img/plus.svg"></p>
-                <p class="ordered-item"><b class="ordered-number">1 x</b> Pizza Margherita <b class="price-tag">10.30
-                        €</b> <img class="trashcan" src="./img/trashcan.svg" alt="trashcan"></b> <img
-                        class="plus-ordered-number" src="./img/plus.svg"></p> -->
 
                 <div class="content-order-complete">
-                    <p>Zwischensumme <b class="padding-left-8px"> 33.20 €</b></p>
+                    <p>Zwischensumme <b class="padding-left-8px" id="food_sum_between"> 0 €</b></p>
                     <p><img class="plus-delivery-cost" src="./img/plus.svg"> Lieferkosten <b class="padding-left-8px">5
                             €</b> <img class="delivery-toggle" src="./img/cross.svg">
                     </p>
                     <div class="horizontal-line"></div>
                     <div class="horizontal-line"></div>
-                    <p class="ordered-items-sum"> Gesamt 38.20 €</p>
+                    <p class="ordered-items-sum" id="food_sum"> Gesamt 0 €</p>
                 </div>
             </div>
         </section>
         <div class="order-items">
             <div class="header-order-items">
-                <div onclick="toggleFoodType('pizza')" class="tab-order-items">PIZZA</div>
-                <div onclick="toggleFoodType('salad')" class="tab-order-items">SALATE</div>
-                <div onclick="toggleFoodType('dessert')" class="tab-order-items">DESSERT</div>
+                <div onclick="toggleFoodType('pizza')" class="tab-order-items active" id="pizza_tab">PIZZA</div>
+                <div onclick="toggleFoodType('salad')" class="tab-order-items" id="salad_tab">SALATE</div>
+                <div onclick="toggleFoodType('dessert')" class="tab-order-items" id="dessert_tab">DESSERT</div>
             </div>
             <div class="background-img-stone">
                 <div class="background-color-white">

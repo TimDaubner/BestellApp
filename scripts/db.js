@@ -44,13 +44,13 @@ let food = [
     {
         "type": "salad",
         "name": "Salat Gemischt",
-        "price": ["9.80", "10.30", "12.00"],
+        "price": ["9.80", "8.50", "12.00"],
         "size": ["small", "normal", "big"]
     },
     {
         "type": "salad",
         "name": "Salat Tomate Mozzarella",
-        "price": ["9.90", "11.30", "12.10"],
+        "price": ["9.90", "8.10", "12.10"],
         "size": ["small", "normal", "big"]
     },
     {
@@ -62,13 +62,13 @@ let food = [
     {
         "type": "salad",
         "name": "Salat Frutti di Marè",
-        "price": ["12.00", "12.50", "13.20"],
+        "price": ["12.00", "11.90", "13.20"],
         "size": ["small", "normal", "big"]
     },
     {
         "type": "salad",
         "name": "Salat Tri Colori",
-        "price": ["13.00", "14.00", "15.00"],
+        "price": ["13.00", "16.00", "15.00"],
         "size": ["small", "normal", "big"]
     },
     {
@@ -80,49 +80,49 @@ let food = [
     {
         "type": "salad",
         "name": "Salat Olive",
-        "price": ["13.80", "14.30", "15.10"],
+        "price": ["13.80", "9.30", "15.10"],
         "size": ["small", "normal", "big"]
     },
     {
         "type": "dessert",
         "name": "Tiramisu",
-        "price": ["9.80", "10.30", "12.00"],
+        "price": ["9.80", "7.50", "12.00"],
         "size": ["small", "normal", "big"]
     },
     {
         "type": "dessert",
         "name": "Panna Cotta",
-        "price": ["9.90", "11.30", "12.10"],
+        "price": ["9.90", "5.70", "12.10"],
         "size": ["small", "normal", "big"]
     },
     {
         "type": "dessert",
         "name": "Creme della Lux",
-        "price": ["10.50", "11.30", "12.00"],
+        "price": ["10.50", "6.70", "12.00"],
         "size": ["small", "normal", "big"]
     },
     {
         "type": "dessert",
         "name": "Dino Cake",
-        "price": ["12.00", "12.50", "13.20"],
+        "price": ["12.00", "5.20", "13.20"],
         "size": ["small", "normal", "big"]
     },
     {
         "type": "dessert",
         "name": "Dino Waffeln",
-        "price": ["13.00", "14.00", "15.00"],
+        "price": ["13.00", "11.80", "15.00"],
         "size": ["small", "normal", "big"]
     },
     {
         "type": "dessert",
         "name": "Dino Milkshake",
-        "price": ["13.80", "15.20", "16.00"],
+        "price": ["13.80", "8.40", "16.00"],
         "size": ["small", "normal", "big"]
     },
     {
         "type": "dessert",
         "name": "Snack Platte",
-        "price": ["13.80", "14.30", "15.10"],
+        "price": ["13.80", "8.40", "15.10"],
         "size": ["small", "normal", "big"]
     }
 ]
